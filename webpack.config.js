@@ -1,7 +1,7 @@
 /**
  * Created by manishgiri on 3/12/17.
  */
-
+var path = require('path');
 /*module.exports = {
     entry: './public/app.js',
     output: {
@@ -20,9 +20,10 @@ module.exports = {
         filename: './public/bundle.js'
     },
     resolve: {
-        root: __dirname,
+        //root: __dirname,
         alias: {
-          Greeter: 'public/components/Greeter.jsx',
+            //Greeter: 'public/components/Greeter.jsx',
+            Greeter: path.resolve(__dirname, 'public/components/Greeter.jsx'),
             GreeterMessage: 'public/components/GreeterMessage.jsx',
             GreeterForm: 'public/components/GreeterForm.jsx'
         },
